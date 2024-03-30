@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Colegio Gimnasio Santander</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="../inicio.html" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
+                <!-- <i class="flaticon-043-teddy-bear"></i> -->
+                <img class="animate__animated animate__backInLeft" src="../img/icons8-school-96.png" alt="icon-school">
+                <span class="text-primary animate__animated animate__backInDown"><img src="../img/logoCol.png"
+                        alt="logo-Col" width="200"></span>
+
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0">
+
+                    <div class="nav-item dropdown prop">
+                        <a href="#" class="btn  dropdown-toggle animate__animated animate__fadeInRightBig" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Nuestra
+                            Institución</a>
+
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="#" class="dropdown-item animate__animated  animate__delay-0.5s">DESCARGA
+                                PEI CGS 2024</a>
+                            <a href="#" class="dropdown-item animate__animated  animate__delay-0.6s">¿Quienes
+                                Somos?</a>
+                            <a href="#" class="dropdown-item animate__animated  animate__delay-0.7s">Escuela
+                                Activa</a>
+
+                            <div class="drop">
+                                <a href="#" class="dropdown-item menu animate__animated  animate__delay-0.8s"
+                                    onclick="mostrar_menu_aliados()">Aliados
+                                    ⬇️</a>
+                                <div class="drop-content" id="cont_ali">
+                                    <a href="#">Ashoka</a>
+                                    <a href="#">Breteau Fundation</a>
+                                    <a href="#">Fundación Escuela Nueva Volvamos a la gente</a>
+                                    <!-- <div class="drop-submenu">
+                                            <a href="#">Opción 3 con Submenú</a>
+                                            <div class="drop-submenu-content">
+                                                <a href="#">Subopción </a>
+                                                <a href="#">Subopción 2</a>
+                                                <a href="#">Subopción 3</a>
+                                            </div>
+                                        </div> -->
+                                </div>
+                            </div>
+                            <br>
+                            <div class="drop-1">
+                                <a href="#l" class="dropdown-item " onclick="mostrar_menu_TrabaC()">Trabajamos Juntos
+                                    ⬇️</a>
+                                <div class="drop-1content" id="cont_TC">
+                                    <a href="#">Gobierno de Docentes</a>
+                                    <a href="#">Gobierno de Padres</a>
+                                    <a href="#">Gobierno Estudiantil</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#"
+                        class="nav_item nav-link animate__animated animate__fadeInRightBig animate__delay-0.3s prop"
+                        style="color: #000;">Memorias
+                        CGS 60 años</a>
+                    <a href=#"
+                        class="nav_item nav-link animate__animated animate__fadeInRightBig animate__delay-0.6s prop"
+                        style="color: #000;">Manual
+                        de Convivencia 2024</a>
+                    <a href="#"
+                        class="nav_item nav-link animate__animated animate__fadeInRightBig animate__delay-0.9s prop"
+                        style="color: #000;">Lecturas
+                        de Fin de Semana </a>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <!-- contenido -->
+    <div class="content">
+        <div class="options_">
+            <button class="optionbtn" id="Secundaria">
+                <span> Secundaria
+                </span>
+            </button>
+
+            <button class="optionbtn" id="Primaria">
+                <span> Primaria
+                </span>
+            </button>
+        </div>
+        <div class="articles hidden" id="art_primaria" >
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Name Asignatura</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Name Lectura</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong>  <br>
+                        <strong>Docente:</strong>  <br>
+                        <strong>Fecha de socialización:</strong> </p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Name Asignatura</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Name Lectura</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong>  <br>
+                        <strong>Docente:</strong>  <br>
+                        <strong>Fecha de socialización:</strong> </p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Name Asignatura</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Name Lectura</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong>  <br>
+                        <strong>Docente:</strong>  <br>
+                        <strong>Fecha de socialización:</strong> </p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Name Asignatura</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Name Lectura</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong>  <br>
+                        <strong>Docente:</strong>  <br>
+                        <strong>Fecha de socialización:</strong> </p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Name Asignatura</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Name Lectura</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong>  <br>
+                        <strong>Docente:</strong>  <br>
+                        <strong>Fecha de socialización:</strong> </p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Name Asignatura</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Name Lectura</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong>  <br>
+                        <strong>Docente:</strong>  <br>
+                        <strong>Fecha de socialización:</strong> </p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="articles hidden" id="art_secundaria" >
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Tecnología</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Programemos</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong> Tecnología <br>
+                        <strong>Docente:</strong> Hector Arias <br>
+                        <strong>Fecha de socialización:</strong> Abril 01/2024</p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Name Asignatura</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Name Lectura</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong>  <br>
+                        <strong>Docente:</strong>  <br>
+                        <strong>Fecha de socialización:</strong> </p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Name Asignatura</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Name Lectura</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong>  <br>
+                        <strong>Docente:</strong>  <br>
+                        <strong>Fecha de socialización:</strong> </p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Name Asignatura</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Name Lectura</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong>  <br>
+                        <strong>Docente:</strong>  <br>
+                        <strong>Fecha de socialización:</strong> </p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Name Asignatura</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Name Lectura</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong>  <br>
+                        <strong>Docente:</strong>  <br>
+                        <strong>Fecha de socialización:</strong> </p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="title">Name Asignatura</p>
+                        <p>Hover Me</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="title">Name Lectura</p>
+                        <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
+                        <p style="text-align: left; padding: 20px;">
+                        <strong>Asignatura:</strong>  <br>
+                        <strong>Docente:</strong>  <br>
+                        <strong>Fecha de socialización:</strong> </p>
+                        <button class="botao">
+                            <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                height="24px" width="24px">
+                                <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="Interface / Download">
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
+                                            stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="texto">Descargar</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contenido -->
+    <!-- footer start -->
+    <div class="row footer">
+        <div class="col-sm-6">
+            <div class="card footer">
+                <div class="card-body " style="text-align: center;">
+                    <h5 class="card-title" style="color: white;">Contactanos</h5>
+                    <div class="redes_sociales">
+                        <a href="#" class="btn_facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                            Facebook
+                        </a>
+                        <a href="#" class="btn_instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="#" class="btn_youtube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                            </svg>
+                            YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card footer">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center; color: white;">Nos encontramos úbicados</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d508318.0980801473!2d-73.367611!3d5.532097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7dd4d4942d1f%3A0xf1a6a6252f4e060e!2sColegio%20Gimnasio%20Santander!5e0!3m2!1ses-419!2sus!4v1710260820860!5m2!1ses-419!2sus"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
