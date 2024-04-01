@@ -688,5 +688,8 @@ button:hover::before {
     .buttons-options button {
         font-size: 8px;
     }
+    .manual{
+        width: 100%;
+    }
 
 }
