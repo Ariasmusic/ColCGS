@@ -674,6 +674,9 @@ button:hover::before {
     .card-cgs{
         width: 95%;
     }
+    .manual{
+        width: 100%;
+    }
 }
 
 @media screen and (width < 600px) {
