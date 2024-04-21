@@ -495,15 +495,13 @@ button:hover::before {
 }
 
 /* end cards */
-
+.mm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .articles {
-    /* display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; */
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px), 1fr));
-    place-items: center;
     gap: 40px;
     margin: 100px;
 }
@@ -691,5 +689,4 @@ button:hover::before {
     .manual{
         width: 100%;
     }
-
 }
