@@ -495,15 +495,13 @@ button:hover::before {
 }
 
 /* end cards */
-.mm{
+
+.articles {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.articles {
-
-    gap: 40px;
-    margin: 100px;
+    gap:  40px;
+    margin: 50px;
 }
 
 .hidden {
