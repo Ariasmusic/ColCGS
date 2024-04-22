@@ -503,7 +503,12 @@ button:hover::before {
     gap:  40px;
     margin: 50px;
 }
-
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:  40px;
+}
 .hidden {
     display: none;
 }
