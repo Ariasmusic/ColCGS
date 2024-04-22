@@ -41,6 +41,7 @@ let btn_primary = document.getElementById('Primaria');
 
 btn_primary.addEventListener("click", function(){
     document.getElementById('art_primaria').style.display = 'grid';
+    document.getElementById('art_primaria').style.flex-wrap = 'wrap';
     document.getElementById('art_secundaria').style.display = 'none';
 
 });
@@ -48,5 +49,6 @@ btn_primary.addEventListener("click", function(){
 btn_secudary.addEventListener("click", function(){
     document.getElementById('art_primaria').style.display = 'none';
     document.getElementById('art_secundaria').style.display = 'grid';
+    document.getElementById('art_secundaria').style.flex-wrap = 'wrap';
 
 });
