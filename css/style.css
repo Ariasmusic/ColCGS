@@ -495,7 +495,13 @@ button:hover::before {
 }
 
 /* end cards */
-
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap:  40px;
+    margin: 50px;
+}
 
 .content {
     display: flex;
