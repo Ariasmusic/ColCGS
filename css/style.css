@@ -496,22 +496,6 @@ button:hover::before {
 
 /* end cards */
 
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:  40px;
-    margin: 50px;
-}
-#art_primaria{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    gap:  40px;
-}
-.hidden {
-    display: none;
-}
 
 .content {
     display: flex;
