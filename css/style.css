@@ -503,7 +503,7 @@ button:hover::before {
     gap:  40px;
     margin: 50px;
 }
-.grid{
+#art_primaria{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
