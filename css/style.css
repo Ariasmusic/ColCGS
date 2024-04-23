@@ -507,6 +507,9 @@ button:hover::before {
     justify-content: center;
     gap: 40px;
 }
+.hidden{
+    display: none;
+}
 
 .content {
     display: flex;
