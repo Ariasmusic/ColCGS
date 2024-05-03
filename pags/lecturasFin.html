@@ -57,7 +57,8 @@
                         <div class="dropdown-menu rounded-0 m-0">
                             <a href="#" class="dropdown-item animate__animated  animate__delay-0.5s">DESCARGA
                                 PEI CGS 2024</a>
-                            <a href="¿quienesSomos.html" class="dropdown-item animate__animated  animate__delay-0.6s">¿Quienes
+                            <a href="¿quienesSomos.html"
+                                class="dropdown-item animate__animated  animate__delay-0.6s">¿Quienes
                                 Somos?</a>
                             <a href="#" class="dropdown-item animate__animated  animate__delay-0.7s">Escuela
                                 Activa</a>
@@ -111,6 +112,62 @@
     </div>
     <!-- Navbar End -->
     <!-- contenido -->
+
+    <!-- form  -->
+
+    <button id="mostrarF" class="btn-form-mostrar">
+        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+                d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                fill="currentColor"></path>
+        </svg>
+        <span id="txt_">Mostrar</span>
+    </button>
+
+    <div class="container-log" id="formulario">
+        <h2 class="form-title">Formulario de Tarjeta</h2>
+        <form id="formularioCard" class="form">
+            <div class="form-group">
+                <!-- <label for="titulo">Título:</label> -->
+                <input class="input" type="text" id="titulo" name="titulo" placeholder="Título" required>
+            </div>
+            <div class="form-group">
+                <!-- <label for="pdf">URL del PDF:</label> -->
+                <input class="input" type="text" id="area" name="area" placeholder="Asignatura" required>
+            </div>
+            
+            <div class="form-group">
+                <!-- <label for="autor">Autor:</label> -->
+                <input class="input" type="text" id="autor" name="autor" placeholder="Docente" required>
+            </div>
+            <div class="form-group">
+                <!-- <label for="imagen">URL de la Imagen:</label> -->
+                <input class="input" type="url" id="imagen" name="imagen" placeholder="URL de la Imagen" required>
+            </div>
+
+            <div class="form-group">
+                <!-- <label for="pdf">URL del PDF:</label> -->
+                <input class="input" type="url" id="pdf" name="pdf" placeholder="URL del PDF" required>
+            </div>
+
+            <div class="form-group">
+                <!-- <label for="autor">Autor:</label> -->
+                <input class="input" type="date" id="fecha" name="fecha" placeholder="Fecha de Socialización" required>
+            </div>
+            <div class="botones">
+                <button class="btn-crear-" type="button" onclick="crearCard()">Crear Card</button>
+                <button id="eliminarUltimaCard" class="btn-crear" onclick="eliminarUltimaTarjeta()">Eliminar Última
+                    Tarjeta</button>
+            </div>
+        </form>
+
+
+    </div>
+    <div id="contenedorCards" class="contenedorCards">
+        <!-- Aquí se agregarán las tarjetas creadas dinámicamente -->
+    </div>
+    <!-- end form -->
     <div class="content">
         <div class="options_">
             <button class="optionbtn" id="Secundaria">
@@ -123,7 +180,7 @@
                 </span>
             </button>
         </div>
-        <div class="articles hidden" id="art_primaria" >
+        <div class="articles hidden" id="art_primaria">
             <h1 style="text-align: center;">Lecturas Fin de Semana Primaria</h1>
             <div class="card-lecturas">
                 <div class="flip-card">
@@ -136,9 +193,10 @@
                             <p class="title">Name Lectura</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong>  <br>
-                            <strong>Docente:</strong>  <br>
-                            <strong>Fecha de socialización:</strong> </p>
+                                <strong>Asignatura:</strong> <br>
+                                <strong>Docente:</strong> <br>
+                                <strong>Fecha de socialización:</strong>
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -147,14 +205,15 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -168,9 +227,10 @@
                             <p class="title">Name Lectura</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong>  <br>
-                            <strong>Docente:</strong>  <br>
-                            <strong>Fecha de socialización:</strong> </p>
+                                <strong>Asignatura:</strong> <br>
+                                <strong>Docente:</strong> <br>
+                                <strong>Fecha de socialización:</strong>
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -179,14 +239,15 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -200,9 +261,10 @@
                             <p class="title">Name Lectura</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong>  <br>
-                            <strong>Docente:</strong>  <br>
-                            <strong>Fecha de socialización:</strong> </p>
+                                <strong>Asignatura:</strong> <br>
+                                <strong>Docente:</strong> <br>
+                                <strong>Fecha de socialización:</strong>
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -211,14 +273,15 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -232,9 +295,10 @@
                             <p class="title">Name Lectura</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong>  <br>
-                            <strong>Docente:</strong>  <br>
-                            <strong>Fecha de socialización:</strong> </p>
+                                <strong>Asignatura:</strong> <br>
+                                <strong>Docente:</strong> <br>
+                                <strong>Fecha de socialización:</strong>
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -243,14 +307,15 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -264,9 +329,10 @@
                             <p class="title">Name Lectura</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong>  <br>
-                            <strong>Docente:</strong>  <br>
-                            <strong>Fecha de socialización:</strong> </p>
+                                <strong>Asignatura:</strong> <br>
+                                <strong>Docente:</strong> <br>
+                                <strong>Fecha de socialización:</strong>
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -275,14 +341,15 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -296,9 +363,10 @@
                             <p class="title">Name Lectura</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong>  <br>
-                            <strong>Docente:</strong>  <br>
-                            <strong>Fecha de socialización:</strong> </p>
+                                <strong>Asignatura:</strong> <br>
+                                <strong>Docente:</strong> <br>
+                                <strong>Fecha de socialización:</strong>
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -307,20 +375,21 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="articles hidden" id="art_secundaria" >
+        <div class="articles hidden" id="art_secundaria">
             <h1 style="text-align: center;">Lecturas Fin de Semana Bachillerato</h1>
             <div class="card-lecturas">
                 <div class="flip-card">
@@ -333,9 +402,10 @@
                             <p class="title">Programemos</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong> Tecnología <br>
-                            <strong>Docente:</strong> Hector Arias <br>
-                            <strong>Fecha de socialización:</strong> Abril 01/2024</p>
+                                <strong>Asignatura:</strong> Tecnología <br>
+                                <strong>Docente:</strong> Hector Arias <br>
+                                <strong>Fecha de socialización:</strong> Abril 01/2024
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -344,14 +414,15 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -365,9 +436,10 @@
                             <p class="title">Name Lectura</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong>  <br>
-                            <strong>Docente:</strong>  <br>
-                            <strong>Fecha de socialización:</strong> </p>
+                                <strong>Asignatura:</strong> <br>
+                                <strong>Docente:</strong> <br>
+                                <strong>Fecha de socialización:</strong>
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -376,14 +448,15 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -397,9 +470,10 @@
                             <p class="title">Name Lectura</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong>  <br>
-                            <strong>Docente:</strong>  <br>
-                            <strong>Fecha de socialización:</strong> </p>
+                                <strong>Asignatura:</strong> <br>
+                                <strong>Docente:</strong> <br>
+                                <strong>Fecha de socialización:</strong>
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -408,14 +482,15 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -429,9 +504,10 @@
                             <p class="title">Name Lectura</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong>  <br>
-                            <strong>Docente:</strong>  <br>
-                            <strong>Fecha de socialización:</strong> </p>
+                                <strong>Asignatura:</strong> <br>
+                                <strong>Docente:</strong> <br>
+                                <strong>Fecha de socialización:</strong>
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -440,14 +516,15 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -461,9 +538,10 @@
                             <p class="title">Name Lectura</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong>  <br>
-                            <strong>Docente:</strong>  <br>
-                            <strong>Fecha de socialización:</strong> </p>
+                                <strong>Asignatura:</strong> <br>
+                                <strong>Docente:</strong> <br>
+                                <strong>Fecha de socialización:</strong>
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -472,14 +550,15 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
@@ -493,9 +572,10 @@
                             <p class="title">Name Lectura</p>
                             <img src="../img/tecnologia.png" alt="icon" style="border-radius: 50%;">
                             <p style="text-align: left; padding: 20px;">
-                            <strong>Asignatura:</strong>  <br>
-                            <strong>Docente:</strong>  <br>
-                            <strong>Fecha de socialización:</strong> </p>
+                                <strong>Asignatura:</strong> <br>
+                                <strong>Docente:</strong> <br>
+                                <strong>Fecha de socialización:</strong>
+                            </p>
                             <button class="botao">
                                 <svg class="mysvg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     height="24px" width="24px">
@@ -504,14 +584,15 @@
                                     <g id="SVGRepo_iconCarrier">
                                         <g id="Interface / Download">
                                             <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2"
-                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" id="Vector">
+                                                stroke="#f1f1f1" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12"
+                                                id="Vector">
                                             </path>
                                         </g>
                                     </g>
                                 </svg>
                                 <span class="texto">Descargar</span>
                             </button>
-    
+
                         </div>
                     </div>
                 </div>
