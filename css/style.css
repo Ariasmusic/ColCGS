@@ -495,6 +495,7 @@ button:hover::before {
 }
 
 /* end cards */
+
 .articles {
 
     display: flex;
@@ -507,7 +508,8 @@ button:hover::before {
     justify-content: center;
     gap: 40px;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
 
@@ -590,6 +592,302 @@ button:hover::before {
 }
 
 /* end acrds */
+
+/* forms */
+body {
+    background-color: #e8e8e8;
+}
+
+.container-log {
+    max-width: 350px;
+    background: #F8F9FD;
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
+    border-radius: 40px;
+    padding: 25px 35px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+    margin: 20px;
+    display: none;
+}
+
+
+.heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(16, 137, 211);
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form .input {
+    width: 90%;
+    background: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: #cff0ff 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+}
+
+.form .input::-moz-placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.form .input::placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.form .input:focus {
+    outline: none;
+    border-inline: 2px solid #12B1D1;
+}
+
+.form .forgot-password {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.form .forgot-password a {
+    font-size: 11px;
+    color: #0099ff;
+    text-decoration: none;
+}
+
+.form .button {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(16, 137, 211) 0%, rgb(18, 177, 209) 100%);
+    color: white;
+    padding-block: 15px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.form .button:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+}
+
+.form .button:active {
+    transform: scale(0.95);
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+.social-account-container-log {
+    margin-top: 25px;
+}
+
+.social-account-container-log .title {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(170, 170, 170);
+}
+
+.social-account-container-log .social-accounts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.social-account-container .social-accounts .social-button {
+    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 112, 112) 100%);
+    border: 5px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 12px 10px -8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-account-container .social-accounts .social-button .svg {
+    fill: white;
+    margin: auto;
+}
+
+.social-account-container .social-accounts .social-button:hover {
+    transform: scale(1.2);
+}
+
+.social-account-container .social-accounts .social-button:active {
+    transform: scale(0.9);
+}
+
+.agreement {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.agreement a {
+    text-decoration: none;
+    color: #0099ff;
+    font-size: 9px;
+}
+
+/* /// */
+.eliminar-btn {
+    margin-left: 10px;
+    background-color: #f44336;
+    color: #fff;
+}
+
+.eliminar-btn:hover {
+    background-color: #d32f2f;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.card:hover {
+    transform: scale(.9);
+    transition: transform .4s;
+    box-shadow: 5px 5px 5px rgb(152, 144, 144);
+}
+
+.card img {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+
+.botones {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn-crear {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.btn-crear:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+.btn-crear:hover:not(:disabled) {
+    background: lightcoral;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.btn-crear:disabled {
+    cursor: auto;
+    color: grey;
+}
+
+.btn-crear- {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: rgb(34, 179, 50);
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.btn-crear-:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+.btn-crear-:hover:not(:disabled) {
+    background: rgb(28, 203, 92);
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.btn-crear:disabled {
+    cursor: auto;
+    color: grey;
+}
+
+.contenedorCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.btn-form-mostrar {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    margin: 5px;
+    z-index: 8;
+}
+
+.btn-form-mostrar svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.btn-form-mostrar span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.btn-form-mostrar:hover svg {
+    transform: translateX(5px) rotate(90deg);
+}
+
+.btn-form-mostrar:hover span {
+    transform: translateX(7px);
+}
+
+/* end form */
 @keyframes show {
     0% {
         opacity: .4;
@@ -670,10 +968,12 @@ button:hover::before {
     .articles {
         margin: 50px;
     }
-    .card-cgs{
+
+    .card-cgs {
         width: 95%;
     }
-    .manual{
+
+    .manual {
         width: 100%;
     }
 }
@@ -687,7 +987,8 @@ button:hover::before {
     .buttons-options button {
         font-size: 8px;
     }
-    .manual{
+
+    .manual {
         width: 100%;
     }
 }
